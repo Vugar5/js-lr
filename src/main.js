@@ -1,5 +1,5 @@
 var req = new XMLHttpRequest();
-req.open('GET', 'http://www.omdbapi.com/?apikey=202de9b6&s=batman', false); 
+req.open('GET', 'http://www.omdbapi.com/?apikey=202de9b6&s=spider-man', false); 
 req.send(null);
 if(req.status == 0)
   dump(req.responseText);
@@ -10,6 +10,8 @@ if(req.status == 0)
 
 
   let movie = document.getElementById('movie');
+
+  
 
 //   result.forEach(element => {
 //     img.src=(element.Poster);
