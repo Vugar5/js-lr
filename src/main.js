@@ -4,7 +4,7 @@ function Zapros() {
     var req = new XMLHttpRequest();
     req.open('GET', 'http://www.omdbapi.com/?&apikey=202de9b6&s=spider-man', false);
     req.send(null);
-    if(req.status!=200) ()=>reject (()=>console.log("Что-то пошло не так"));
+    if(req.status!=200) ()=>reject (()=>console.log("Что-то не то"));
     let result = JSON.parse(req.responseText).Search;
     resolve(result);
     console.log(result);
